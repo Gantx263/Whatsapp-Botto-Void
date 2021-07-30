@@ -29,7 +29,62 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `🎫 *${this.client.config.name} Command List* 🎫\n\n`
+            let text = let text`🎫 *return `╭─「 *Ahoyou!*(♥️w♥️) *I am Koneko~Nyaa* 」
+  
+ *「Bot Prefix」* - *「 ${client._config.prefix} 」*
+ *「Owner」* *${client._config.prefix}https://wa.me/263715606285*
+╰─────────────────┈ ❁ཻུ۪۪⸙͎	
+─────────────────┈ ❁ཻུུ۪۪۪۪
+🌟️ *𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧* 🌟️
+─────────────────┈ ❁ཻུུ۪۪۪۪
+
+╭─「 ♦️General-Commands♦️ 」
+│ 
+│❏ *${client._config.prefix}profile*
+│❏ *${client._config.prefix}admins*
+│❏ *${client._config.prefix}ping*
+│❏ *${client._config.prefix}owner*
+│❏ *${client._config.prefix}xp*
+╰─────────────────┈ ❁ཻུ۪۪⸙͎
+
+╭─「 ♦️Media-Commands♦️ 」
+│ 
+│ ♦️ *${client._config.prefix}lyrics*
+│ ♦️ *${client._config.prefix}yts*
+│ ♦️ *${client._config.prefix}yta*
+│ ♦️ *${client._config.prefix}ytv*
+│ ♦️ *${client._config.prefix}sticker*
+│ ♦️ *${client._config.prefix}play*
+│ ♦️ *${client._config.prefix}steal*
+│ ♦️ *${client._config.prefix}subred*
+╰─────────────────┈ ❁ཻུ۪۪⸙͎
+  
+╭─「 ♦️Admin-Commands♦️ 」
+│   
+│ ♦️ *${client._config.prefix}act*
+│ ♦️ *${client._config.prefix}purge*
+│ ♦️ *${client._config.prefix}open*
+│ ♦️ *${client._config.prefix}close*
+│ ♦️ *${client._config.prefix}everyone*
+│ ♦️ *${client._config.prefix}promote*
+│ ♦️ *${client._config.prefix}demote*
+│ ♦️ *${client._config.prefix}deact*
+│ ♦️ *${client._config.prefix}remove*
+╰─────────────────┈ ❁ཻུ۪۪⸙͎
+♦️───────────────┈ ❁۪۪
+╭─「 ♦️Owner-Commands♦️ 」
+│
+│ ♦️ *${client._config.prefix}eval*
+│ ♦️ *${client._config.prefix}unban*
+│ ♦️ *${client._config.prefix}ban*
+│ ♦️ *${client._config.prefix}broadcast*
+╰─❁۪۪─────────┈ ❁ཻཻུུ۪۪۪۪⸙͎
+─────────────────┈ ❁۪۪──
+ *「Kaoi-Botto」*
+┃╭────────╯   
+┃│📢 *Github: https://github.com/Gantx-Hckr*
+┃│📢 *Simp Freakin Sama
+╰─────────────────┈ ❁ཻུ۪۪⸙͎║* 🎫\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
