@@ -29,8 +29,8 @@ export default class MessageHandler {
                 sender.username
             )} in ${chalk.cyanBright(groupMetadata?.subject || 'DM')}`
         )
-        if (!command) return void M.reply('No Command Found! Try using one from the help list.')
-        const user = await this.client.getUser(M.sender.jid)
+        if (!command) return void M.reply('Baka! Do you mean help?')
+        const user = await this.client.getProfilePicture(user)
         if (user.ban) return void M.reply("You're Banned from using commands.")
         const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
         if (state) return void M.reply(`❌ This command is disabled${state.reason ? ` for ${state.reason}` : ''}`)
@@ -40,7 +40,7 @@ export default class MessageHandler {
         try {
             await command.run(M, this.parseArgs(args))
             if (command.config.baseXp) {
-                await this.client.setXp(M.sender.jid, command.config.baseXp || 10, 50)
+                await this.client.setXp(M.sender.jid, command.config.baseXp || 200, 300)
             }
         } catch (err) {
             return void this.client.log(err.message, true)
